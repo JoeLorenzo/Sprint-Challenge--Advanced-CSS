@@ -1,6 +1,6 @@
 // Mixins Here
 .button(@width, @heigth, @font-size){
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,4 +11,23 @@
     width: @width;
     height: @heigth;
     font-size: @font-size;
+
+    &:hover{
+      background: white;
+      color:@river-bend;
+    }
+}
+
+.flex-start{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
+
+.flex-center{
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  flex-direction:row;
 }
